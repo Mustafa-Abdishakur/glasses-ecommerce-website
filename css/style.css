@@ -1,0 +1,378 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+/*fading effect*/
+.fading-container div{
+opacity:0;
+transition: 0.3s opacity;
+}
+.top-header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:40px;
+    border-bottom: 1px solid grey;
+}
+.top-header-container{
+    padding-right:40px;
+}
+.top-header img{
+    width:20px;
+}
+.top-header-container input{
+    width:200px;
+    height:22px;
+    border-radius:22px;
+    border:1px solid grey;
+    padding-left:5px;
+
+}
+.top-header-container input:focus{
+    outline:none;
+}
+
+.top-header-container a{
+    width:20px;
+    margin:10px;
+    text-decoration: none;
+}
+.bottom-header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom:1px solid grey;
+    height:10vh;
+    background:black;
+    color:white;
+z-index:2;
+
+}
+.bottom-header h2{
+    font-size:45px;
+    font-weight:bold;
+    margin-left: 40px;
+}
+.bottom-header ul{
+margin-right:15%;
+font-size:18px;
+}
+.bottom-header ul li{
+margin:10px;
+display: inline;
+padding:4.5% 4px;
+transition:all 0.5s;
+}
+.bottom-header ul li:hover{
+background:white;
+color:black;
+}
+
+
+header .bottom-header ul li:hover{
+    cursor: pointer;
+    border-bottom:1.5px solid black;
+}
+
+.dropdown{
+  display:inline-block;  
+position:relative;
+
+}
+
+.dropdown-links{
+    display:none;
+    position:absolute;
+    border:0.1px solid lightgrey;
+    border-top:none;
+    background:white;
+    z-index:1;
+    top:25px;
+
+}
+
+
+.dropdown-links a{
+display:block;
+text-decoration: none;
+color:black;
+margin:10px;
+}
+.dropdown-links a:hover{
+    font-weight:bold;
+}
+
+
+.dropdown:hover .dropdown-links{
+    display:block;
+}
+
+.container-1{
+    margin:80px auto;
+}
+.section-title{
+text-align: center;
+display:inline-block;
+transform:translateX(40vw);
+
+}
+.section-title::before{
+    content:'';
+    border-bottom:1px solid grey;
+    position:absolute;
+    width:30vw;
+    top:50%;
+    right:110%; 
+}
+.section-title::after{
+    content:'';
+    border-bottom:1px solid grey;
+    position:absolute;
+    width:30vw;
+    top:50%;
+    left:110%; 
+}
+.glasses-container{
+    margin:auto;
+    display:flex;
+    width:70vw;
+    align-items:center;
+}
+.glasses-container span{
+    margin-left:12px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.glasses-container div{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    width:20%;
+    height:70px;
+    margin:auto;
+    transition: all 0.5s;
+    }
+.glasses-container div:hover{
+    box-shadow:0 0 5px;
+    cursor:pointer;
+}
+
+.glasses-container img{
+    width:60%;
+    height:100%;
+}
+.top-sales-container img{
+    width:100%;
+    height:100%;;
+}
+.section-title-2{
+transform:translateX(43vw);
+
+}
+.top-sales{
+    display:flex;
+    width:80vw;
+    height:250px;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.top-sales .sales-items{
+    width:30%;
+    height:100%;
+    display: block;
+    border:1px solid grey;
+    position:relative;
+    transition: all 0.5s;
+}
+.sales-items:after{
+content:'';
+position: relative;
+bottom:35px;
+left:70%;
+font-size:20px;
+font-weight:bold;
+color:rgb(83, 81, 81);
+}
+
+.sale-item-1:after{
+content:'AED 570';
+}
+.sale-item-2:after{
+    content:'AED 200';
+    }
+.sale-item-3:after{
+     content:'AED 320';
+}
+.sale-item-3:before{
+content:'30% discount';
+color:rgba(255, 0, 0, 0.774) !important;
+position: absolute;
+top:87%;
+left:3%;
+font-size:20px;
+font-weight:bold;
+color:rgb(83, 81, 81);
+}
+.sales-items:hover{
+    cursor:pointer;
+    box-shadow: 0 0 8px;
+}
+.advertisment-container-1{
+width:90vw;
+height:75vh;
+margin:80px auto;
+display:flex;
+justify-content: space-between;
+}
+.advertisment-container-1 img{
+    width:49%;
+    height:100%;
+    
+}
+.glasses-picks-container{
+    width:90vw;
+    margin:auto;
+}
+.item img{
+    width:100%;
+    height:100%;
+}
+.item{
+    width:100%;
+    border:1px solid lightgrey;
+    transition:all 0.5s;
+}
+.item:after{
+    content:'AED 300';
+    position: relative;
+    bottom:15px;
+    left:70%;
+    font-size:24px;
+    font-weight:bold;
+    color:rgb(83, 81, 81);  
+}
+.picks-container{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.item:hover{
+    cursor:pointer;
+    box-shadow: 0 0 8px;
+    z-index: 2;
+}
+.advertisment-container-2{
+    width:90vw;
+    height:70vh;
+    margin:80px auto;
+    box-shadow:0 0 3px;
+    }
+    .advertisment-container-2 img{
+        width:100%;
+        height:100%;
+    }
+
+
+.pagination-container{
+    width:20vw;
+    margin:30px auto;
+    display:flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.pagination-container a{
+    color:black;
+    text-decoration: none;
+}
+.pagination-container img{
+    width:17px;
+}
+.pagination-container a:last-child{
+    transform:rotate(-90deg)
+}
+.pagination-container a:first-child{
+    transform:rotate(90deg)
+}
+.pagination-container span:hover{
+cursor:pointer;
+text-decoration: underline;
+}
+
+.email-container{
+    border:1px solid black;
+    border-right:none;
+    border-left:none;
+    box-shadow: 0 0 4px;
+    margin:60px 0;
+    text-align: center;
+    padding-bottom:20px;
+}
+.email-container .inner-container{
+width:60%;
+margin:auto;
+}
+
+.email-container input[type = 'email']{
+    width:40%;
+    height:25px;
+}
+.email-container input[type = 'submit']{
+font-size:15px;
+font-weight:bold;
+background:white;
+border:1px solid black;
+width:80px;
+height:29px;
+transition: all 0.5s;
+}
+.email-container input[type = 'submit']:hover{
+    color:white;
+    background:black;
+    cursor:pointer;
+
+}
+
+.links-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left:20px;
+    height:40vh;
+    border-top:3px solid black;
+}
+.links-container h3{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.links-container div ul li a {
+    text-decoration: none;
+    color:black;
+}
+.links-container div ul li {
+    list-style-type: none;
+    margin-bottom:20px;
+}
+.links-container div ul{
+    padding-left:0;
+}
+.links-container div ul li a:hover {
+    font-weight:bold;
+}
+
+.links-container .container-c ul li a img{
+    width:22px;
+     margin-right:3px;
+}
+.links-container .container-c ul li a {
+display:flex;
+align-items: center;
+
+}
+.flaticon-link{
+    float:right;
+    margin-right:20px;
+    font-size:12px;
+    margin-bottom:5px;
+}
