@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>lenz- number one destination for glasses online</title>
     <link href="css/style.css" rel="stylesheet">
@@ -10,62 +11,50 @@
 
 
 </head>
+<script>
+    function signIn(){
+        document.querySelector('.sign-in-container').style.display = 'block';
+    }
+    function clearSignIn(){
+        if(document.querySelector('input[type=text]').value === ''){
+            document.querySelector('.sign-in-container').style.display = 'none';
+        }
+        
+    }
+</script>
 <body>
- <header>
-   <div class="top-header">
-       <div class="top-header-container">
-            <input type="text" class="search-bar" placeholder="Search">
-            <a href="#" class="header-icon">
-                <img src="img/male.png" alt="sign in">
-            </a>
-            <a href="" class="header-icon">
-                <img src="img/heart.png" alt="favorites">
-            </a>
-            <a href="#" class="header-icon">
-                <img src="img/shopping-cart.png" alt="cart">
-            </a> 
-        </div>   
-   </div>
-   <div class="bottom-header">
-       <h2>Lenz.</h2>
-       <ul>
-           <li>
-                <div class="dropdown">
-                    <span>Gender</span>
-                    <div class="dropdown-links">
-                        <a href="#">Male</a>
-                        <a href="#">Female</a>
-                    </div>
-                </div>   
-        </li> 
-           <li>
-            <div class="dropdown">
-                <span>Size</span>
-                <div class="dropdown-links">
-                    <a href="#">Small</a>
-                    <a href="#">Medium</a>
-                    <a href="#">Large</a>
-                    <a href="#">Extra large</a>
+    <header>
+        <p>No.1 destination for modern glasses</p>
+        <div  class="upper-container">
+            <div class="upper-container-a">
+                    <button onmouseover = "signIn()" onclick="signIn()" class="sign-in-btn">
+                        Sign In
+                    </button>
+                    <div class="text-container">
+                        <h1>Welcome to Lenz</h1>    
+                        <p>The place to find many kinds for glasses for children and adults. You can find them all from prescription glasses to sunglasses glasses.</p>   
                 </div>
-            </div>   
-           </li>
-           <li>Eyeglasses</li>
-           <li>Sunglasses</li>
-           <li>Contacts</li>
-       </ul>
-   </div>  
- </header>
-    <div class="main-container">
-        <div id="sliderFrame">
-            <div id="slider">
-                <img src="img/ad 2.jpg">
-                <img src="img/ad 3.jpg">
-                <img src="img/img-0.jpg">
-                <img src="img/ad 5.jpg">
-                <img src="img/img-1.jpg">
-            </div>
+                <div onmouseleave="clearSignIn()" class="sign-in-container">
+                    <h2>Sign In</h2>
+                    <img src="./img/close.png" onclick="document.querySelector('.sign-in-container').style.display = 'none'" alt="close">
+                    <input type="text" class="input email-input" placeholder="Email">
+                    <input type="text" class="input password-input" placeholder="Password">
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    <a href="#">forgot password</a>
+                    </div>
+                   
+                    <button class="sign-in-button">Sign In</button>
+                    <button class="create-account-btn">Create Account</button>
+                </div>
+                    </div>
+                    
+            
         </div>
-        <div class="fading-container">
+        
+    </header>
+    <main>
         <div class="container-1">
             <div class="section-title">
                 <h1>Main categories</h1>
@@ -113,35 +102,35 @@
         <div class="glasses-picks-container">
             <div class=" section-title section-title-3">
                 <h1>Popular picks</h1>
-            </div> 
+            </div>
             <div class="picks-container">
                 <div class="item pick-item-1">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-2">
                     <img src="img/glasses 4.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-3">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-4">
                     <img src="img/glasses 4.jpg" alt="glasses">
                 </div>
                 <div class="item pick-item-5">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-6">
                     <img src="img/glasses 5.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-7">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-8">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-9">
                     <img src="img/glasses 4.jpg" alt="glasses">
-                </div>                   
+                </div>
             </div>
         </div>
         <div class="advertisment-container-2">
@@ -151,13 +140,13 @@
             <div class="picks-container">
                 <div class="item pick-item-10">
                     <img src="img/glasses 3.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-11">
                     <img src="img/glasses 4.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-12">
                     <img src="img/glasses 5.jpg" alt="glasses">
-                </div>   
+                </div>
                 <div class="item pick-item-13">
                     <img src="img/glasses 3.jpg" alt="glasses">
                 </div>
@@ -200,59 +189,50 @@
         <div class="email-container">
             <div class="inner-container">
                 <h2>Join us to get the latest offers first</h2>
-                <p><b><em>Do you want to be the first to get the latest offer for our glasses?</em></b> Them join our email group and you will notified via email. We offer discounts from 30%,40% and even 50% off. So what are you waiting for?</p>
+                <p><b><em>Do you want to be the first to get the latest offer for our glasses?</em></b> Then join
+                    our email group and you will notified via email. We offer discounts from 30%,40% and even 50%
+                    off. So what are you waiting for?</p>
                 <input type="email" placeholder="Enter email">
                 <input type="submit">
             </div>
         </div>
-        <div class="links-container">
-            <div class="container-a">
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="#">Men glasses</a></li>
-                    <li><a href="#">Women glasses</a></li>
-                    <li><a href="#">Prescription glasses</a></li>
-                    <li><a href="#">kids glasses</a></li>
-                </ul>
-            </div>
-            <div class="container-b">
-                <h3>Contact</h3>
-                <ul>
-                    <li><a href="#">Customer service</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Terms and agreements</a></li>
-                </ul>
-            </div>
-            <div class="container-c">
-                <h3>Social media</h3>
-                <ul>
-                    <li><a href="#"><img src="img/instagram.png"><span>Instagram</span></a></li>
-                    <li><a href="#"><img src="img/facebook.png"><span>Facebook</span></a></li>
-                    <li><a href="#"><img src="img/twitter.png"><span>Twitter</span></a></li>
-                </ul>
-
-            </div>
+    </main>
+    <div class="links-container">
+        <div class="container-a">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="#">Men glasses</a></li>
+                <li><a href="#">Women glasses</a></li>
+                <li><a href="#">Prescription glasses</a></li>
+                <li><a href="#">kids glasses</a></li>
+            </ul>
         </div>
-
-
-
-
-
-
-
+        <div class="container-b">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">Customer service</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms and agreements</a></li>
+            </ul>
+        </div>
+        <div class="container-c">
+            <h3>Social media</h3>
+            <ul>
+                <li><a href="#"><img src="img/instagram.png"><span>Instagram</span></a></li>
+                <li><a href="#"><img src="img/facebook.png"><span>Facebook</span></a></li>
+                <li><a href="#"><img src="img/twitter.png"><span>Twitter</span></a></li>
+            </ul>
 
         </div>
     </div>
 
 
+    <div class="flaticon-link">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+            title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
 
-
-
-
-
-     <div class="flaticon-link">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-   
 
 </body>
+
 </html>
