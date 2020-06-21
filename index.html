@@ -13,34 +13,54 @@
 <body>
     <header>
         <p>No.1 destination for modern glasses</p>
-        <div  class="upper-container">
+        <div class="upper-container">
             <div class="upper-container-a">
-                    <button onmouseover = "signIn()" onclick="signIn()" class="sign-in-btn">
-                        Sign In
-                    </button>
-                    <div class="text-container">
-                        <h1>Welcome to Lenz</h1>    
-                        <p>The place to find many kinds for glasses for children and adults. You can find them all from prescription glasses to sunglasses glasses.</p>   
+                <button onmouseover="signIn()" onclick="signIn()" class="sign-in-btn">
+                    Sign In
+                </button>
+                <div class="text-container">
+                    <h1>Welcome to Lenz</h1>
+                    <p>The place to find many kinds for glasses for children and adults. You can find them all from
+                        prescription glasses to sunglasses glasses.</p>
                 </div>
                 <div onmouseleave="clearSignIn()" class="sign-in-container">
                     <h2>Sign In</h2>
-                    <img src="./img/close.png" onclick="document.querySelector('.sign-in-container').style.display = 'none'" alt="close">
+                    <img src="./img/close.png"
+                        onclick="document.querySelector('.sign-in-container').style.display = 'none'" alt="close">
                     <input type="text" class="input email-input" placeholder="Email">
                     <input type="text" class="input password-input" placeholder="Password">
                     <div class="checkbox">
                         <input type="checkbox">
                         <span>Remember me</span>
-                    <a href="#">forgot password</a>
+                        <a href="#">forgot password</a>
                     </div>
-                   
+
                     <button class="sign-in-button">Sign In</button>
                     <button class="create-account-btn">Create Account</button>
                 </div>
-                    </div>
-                    
-            
+            </div>
         </div>
-        
+        <div class="bottom-container">
+            <h2>Lenz</h2>
+            <nav>
+                <ul>
+                    <li>categories</li>
+                    <li>Gender</li>
+                    <li>Size</li>
+                    <li>Contact lenses</li>
+                    <li>Try At Home</li>
+                </ul>
+            </nav>
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search">
+                <div class="search-icon-container">
+                    <img src="./img/search.png" alt="search">
+                </div>
+
+            </div>
+        </div>
+
+
     </header>
     <main>
         <div class="container-1">
@@ -221,14 +241,14 @@
     </div>
 
     <script>
-        function signIn(){
+        function signIn() {
             document.querySelector('.sign-in-container').style.display = 'block';
         }
-        function clearSignIn(){
-            if(document.querySelector('input[type=text]').value === ''){
+        function clearSignIn() {
+            if (document.querySelector('input[type=text]').value === '') {
                 document.querySelector('.sign-in-container').style.display = 'none';
             }
-            
+
         }
     </script>
 </body>
