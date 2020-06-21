@@ -33,7 +33,7 @@ header p:first-child{
 .upper-container-a{
     height:100%;
     width:100%;
-    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('../img/background-img-1.jpg');
+    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-1.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center center;
@@ -83,7 +83,7 @@ header p:first-child{
 }
 .sign-in-container a{
     color: grey;
-    font-size:12px;
+    font-size:11px;
     position: relative;
     margin-left:55px;
 }
@@ -97,7 +97,7 @@ header p:first-child{
 }
 .checkbox span{
     color:var(--second-color);
-    font-size:13px;
+    font-size:12px;
 }
 
 .text-container{
@@ -119,12 +119,15 @@ header p:first-child{
     color:var(--forth-color);
     width:75px;
     height:30px;
+    transition: all 0.5s;
+    background-color:var(--second-color);
 }
 .sign-in-btn:focus{
     outline:none;
 }
 .sign-in-btn:hover{
     cursor:pointer;
+    transform: scale(1.1);
 }
 .sign-in-container button{
     display:block;
@@ -147,7 +150,9 @@ header p:first-child{
     color:var(--second-color);
     border-color: var(--second-color);
 }
-
+.appear{
+ display:block;   
+}
 
 
 
