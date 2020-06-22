@@ -3,6 +3,7 @@
     --second-color:#2c3e50;
     --third-color: #e7e7e7;
     --forth-color:#e99449;
+    --fifth-color:rgb(83, 81, 81);
 }
 *{
     box-sizing: border-box;
@@ -184,6 +185,7 @@ position: relative;
     font-size:1.4vw;
     height:100%;
     padding:10px 14px;
+    color:var(--fifth-color);
 
 }
 .bottom-container nav ul li:after {
@@ -191,7 +193,7 @@ position: relative;
     content: '';
     border-bottom: 2px solid var(--first-color);  
     transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
+    transition: transform 300ms ease-in-out;
   }
 .bottom-container nav ul li:hover{
     color:var(--forth-color);
@@ -325,8 +327,7 @@ color:var(--first-color);
     top:65px;
 }
 
-.glasses-container{
-}
+
 .glasses-container-a{
     display:flex;
     justify-content:space-around;
@@ -338,14 +339,15 @@ color:var(--first-color);
 .glasses-container-a span{
     margin-left:5px;
     font-weight:bold;
-    font-size:18px;
+    font-size:1.4vw;
     color:var(--second-color);
 }
 
 .glasses-container-a div{
     display:flex;
+    align-items: center;
     padding:20px;
-    width:20%;
+    width:25%;
     height:70px;
     margin:auto;
     transition: all 0.5s;
@@ -356,8 +358,9 @@ color:var(--first-color);
 }
 
 .glasses-container-a img{
-    width:50%;
+    width:60%;
     height:auto;
+    max-height:100%;
 }
 .top-sales-container{
     position:relative;
@@ -369,14 +372,15 @@ color:var(--first-color);
 
 .top-sales{
     display:flex;
-    width:80vw;
+    width:65vw;
     height:250px;
-    justify-content: space-around;
+    justify-content: space-between;
     margin:auto;
+    position:relative;
 }
 
 .top-sales .sales-items{
-    width:30%;
+    width:33%;
     height:100%;
     display: block;
     border:1px solid grey;
@@ -387,10 +391,10 @@ color:var(--first-color);
 content:'';
 position: relative;
 bottom:35px;
-left:70%;
-font-size:20px;
+left:65%;
+font-size:1.5vw;
 font-weight:bold;
-color:rgb(83, 81, 81);
+color:var(--fifth-color);
 }
 
 .sale-item-1:after{
@@ -404,32 +408,65 @@ content:'AED 570';
 }
 .sale-item-3:before{
 content:'30% discount';
-color:rgba(255, 0, 0, 0.774) !important;
-position: absolute;
-top:87%;
+color:rgba(255, 0, 0, 0.774);
+position:absolute;
+bottom:4%;
 left:3%;
-font-size:20px;
+font-size:1.3vw;
 font-weight:bold;
-color:rgb(83, 81, 81);
 }
 .sales-items:hover{
     cursor:pointer;
     box-shadow: 0 0 8px;
 }
 .advertisment-container-1{
-width:90vw;
+width:80vw;
 height:75vh;
-margin:80px auto;
+margin:60px auto;
 display:flex;
 justify-content: space-between;
+align-items: center;
+
+
 }
 .advertisment-container-1 img{
     width:49%;
-    height:100%;
+    height:auto;
+    max-height:85%;
+    box-shadow: 0 0 15px grey;
     
 }
+.advertisment-content{
+    margin-left:15px;
+}
+.advertisment-content h2{
+    text-align: center;
+    font-size:2vw;
+    color:var(--first-color);
+
+}
+.advertisment-content button{
+    display:block;
+    margin:auto;
+    background-color:var(--second-color);
+    color:var(--forth-color);
+    border:2px solid var(--forth-color);
+    padding:10px;
+    font-size:1.1vw;
+    font-weight: bold;
+    transition:all 0.5s;
+}
+.advertisment-content button:hover{
+cursor: pointer;
+background-color:white;
+transform:scale(1.05);
+}
+.advertisment-content p{
+    font-size:1.5vw;
+    color:rgb(99, 98, 98);
+}
 .glasses-picks-container{
-    width:90vw;
+    width:75vw;
     margin:auto;
     position:relative;
 }
@@ -439,15 +476,16 @@ justify-content: space-between;
 }
 .item{
     width:100%;
+    height:45vh;
     border:1px solid lightgrey;
     transition:all 0.5s;
 }
 .item:after{
     content:'AED 300';
     position: relative;
-    bottom:15px;
+    bottom:35px;
     left:70%;
-    font-size:24px;
+    font-size:1.5vw;
     font-weight:bold;
     color:rgb(83, 81, 81);  
 }
@@ -462,17 +500,45 @@ justify-content: space-between;
     z-index: 2;
 }
 .advertisment-container-2{
-    width:90vw;
+    width:85vw;
     height:70vh;
     margin:80px auto;
-    box-shadow:0 0 3px;
+    box-shadow:0 0 15px black;
     }
-    .advertisment-container-2 img{
-        width:100%;
-        height:100%;
+.ad-container-2a{
+    width:100%;
+    height:100%;
+    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/eye-checkup.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    position:relative;
+}
+.ad-container-2a{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.ad-container-2a p{
+    color:var(--third-color);
+    font-size:1.6vw;
+    font-weight:bold;
+}
+.ad-container-2a button{
+    background-color:var(--second-color);
+    color:var(--forth-color);
+    border:2px solid var(--forth-color);
+    padding:10px;
+    font-size:1.1vw;
+    font-weight: bold;
+    transition:all 0.5s;
+}
+.ad-container-2a button:hover{
+    cursor: pointer;
+    background-color:white;
+    transform:scale(1.05);
     }
-
-
 .pagination-container{
     width:20vw;
     margin:30px auto;
@@ -576,4 +642,25 @@ align-items: center;
     width:100%;
     margin:0;
     text-align: end;
+}
+
+@media (max-width:1265px){
+    .glasses-container-a div{
+    width:30%;
+
+    }
+}
+@media (max-width:1130px){
+    .sale-item-3:before{
+        bottom:6%;
+    }
+}
+@media (max-width:885px){
+    .top-sales{
+        width:75vw;
+
+    }
+    .sale-item-3:before{
+        bottom:6%;
+    }
 }
