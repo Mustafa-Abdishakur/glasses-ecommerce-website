@@ -23,7 +23,7 @@
                     <p>The place to find many kinds for glasses for children and adults. You can find them all from
                         prescription glasses to sunglasses glasses.</p>
                 </div>
-                <div onmouseleave="clearSignIn()" class="sign-in-container">
+                <div class="sign-in-container" onmouseleave="clearSignIn()">
                     <h2>Sign In</h2>
                     <img src="./img/close.png"
                         onclick="document.querySelector('.sign-in-container').style.display = 'none'" alt="close">
@@ -44,11 +44,54 @@
             <h2>Lenz</h2>
             <nav>
                 <ul>
-                    <li>categories</li>
-                    <li>Gender</li>
-                    <li>Size</li>
-                    <li>Contact lenses</li>
-                    <li>Try At Home</li>
+                    <div class="dropdown">
+                        <li>Categories</li>
+                        <div class="dropdown-content">
+                            <a href="#">Round glasses</a>
+                            <a href="#">Sun glasses</a>
+                            <a href="#">Prescription glasses</a>
+                            <a href="#">Kids glasses</a>
+                            <a href="#">Fashion glasses</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Gender</li>
+                        <div class="dropdown-content">
+                            <a href="#">Male</a>
+                            <a href="#">Female</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li>Size</li>
+                        <div class="dropdown-content">
+                            <a href="#">Small</a>
+                            <a href="#">Medium</a>
+                            <a href="#">Large</a>
+                            <a href="#">Extra</a>
+                        </div>
+                    </div>
+                    <div class="second-dropdown">
+                        <li>Contact lenses</li>
+                        <div class="dropdown-content lenses-content">
+                           <img src="./img/lense.jpg" alt="lenses image">
+                           <div class="lenses-container">
+                               <h2>Try our new added contact lenses</h2>
+                               <p>Our new and  polished contact lenses are finally here. Try out out our lenses that come in different colors.</p>
+                               <button>Go to contact lenses</button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="second-dropdown">
+                        <li>Try at home</li>
+                        <div class="dropdown-content lenses-content">
+                           <img src="./img/try-glasses.jpg" alt="glasses image">
+                           <div class="lenses-container">
+                               <h2>Try our glasses at the comfort of your home</h2>
+                               <p>Pick the glasses you like and we will come to you so can try them out.</p>
+                               <button>Learn More</button>
+                           </div>
+                        </div>
+                    </div>
                 </ul>
             </nav>
             <div class="search-bar-container">
@@ -68,22 +111,25 @@
                 <h1>Main categories</h1>
             </div>
             <div class="glasses-container">
-                <div class="glass-0">
-                    <img src="img/round-glasses.jpg" alt="round glasses">
-                    <span>Round</span>
+                <div class="glasses-container-a">
+                    <div class="glass-0">
+                        <img src="img/round-glasses.jpg" alt="round glasses">
+                        <span>Round</span>
+                    </div>
+                    <div class="glass-1">
+                        <img src="img/square-glasses.jpg" alt="square glasses">
+                        <span>Square</span>
+                    </div>
+                    <div class="glass-2">
+                        <img src="img/butterfly-glasses.jpg" alt="butterfly glasses">
+                        <span>Butterfly</span>
+                    </div>
+                    <div class="glass-3">
+                        <img src="img/aviator-glasses.jpg" alt="aviator glasses">
+                        <span>Aviator</span>
+                    </div>
                 </div>
-                <div class="glass-1">
-                    <img src="img/square-glasses.jpg" alt="square glasses">
-                    <span>Square</span>
-                </div>
-                <div class="glass-2">
-                    <img src="img/butterfly-glasses.jpg" alt="butterfly glasses">
-                    <span>Butterfly</span>
-                </div>
-                <div class="glass-3">
-                    <img src="img/aviator-glasses.jpg" alt="aviator glasses">
-                    <span>Aviator</span>
-                </div>
+            
             </div>
         </div>
         <div class="top-sales-container">
@@ -237,7 +283,7 @@
 
 
     <div class="flaticon-link">Icons made by <a href="https://www.flaticon.com/authors/freepik"
-            title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, glass image by <a href="https://pixabay.com/users/slavoljubovski-14965075/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4818784">Martin Slavoljubovski</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4818784">Pixabay and <span>Photo by <a href="https://unsplash.com/@syhussaini?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="">Syed Hussaini</a> on <a href="/s/photos/glasses-brief-case?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" class="">Unsplash</a></span></a>
     </div>
 
     <script>
