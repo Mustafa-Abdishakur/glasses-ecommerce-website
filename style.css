@@ -414,7 +414,7 @@ font-weight:bold;
 .advertisment-container-1{
 width:80vw;
 height:75vh;
-margin:60px auto;
+margin: auto;
 display:flex;
 justify-content: space-between;
 align-items: center;
@@ -494,8 +494,8 @@ transform:scale(1.05);
 .advertisment-container-2{
     width:85vw;
     height:70vh;
-    margin:80px auto;
-    box-shadow:0 0 15px black;
+    margin:30px auto;
+    box-shadow:0 0 10px grey;
     }
 .ad-container-2a{
     width:100%;
@@ -532,14 +532,14 @@ transform:scale(1.05);
     transform:scale(1.05);
     }
 .pagination-container{
-    width:20vw;
+    width:300px;
     margin:30px auto;
     display:flex;
     justify-content: space-between;
     font-size: 25px;
 }
 .pagination-container a{
-    color:black;
+    color:var(--fifth-color);
     text-decoration: none;
 }
 .pagination-container img{
@@ -551,41 +551,64 @@ transform:scale(1.05);
 .pagination-container a:first-child{
     transform:rotate(90deg)
 }
-.pagination-container span:hover{
+.pagination-container span:after{
+    display:block;
+    content: '';
+    border-bottom: 2px solid var(--first-color);  
+    transform: scaleX(0);  
+    transition: transform 200ms ease-in-out;
+}
+.pagination-container span:hover:after{
+    transform: scaleX(1);  
+
+}
+
+.pagination-container a:hover{
 cursor:pointer;
-text-decoration: underline;
+color:var(--forth-color);
 }
 
 .email-container{
-    border:1px solid black;
+    border:2px solid var(--forth-color);
     border-right:none;
     border-left:none;
     box-shadow: 0 0 4px;
-    margin:60px 0;
+    margin:30px 0;
     text-align: center;
-    padding-bottom:20px;
+    background-color:var(--second-color);
+    min-height:33vh;
+    padding-bottom:10px;
 }
 .email-container .inner-container{
 width:60%;
-margin:auto;
+margin:50px auto;
 }
-
+.email-container h2{
+    color:var(--forth-color);
+}
+.email-container p{
+    color:var(--third-color);
+}
 .email-container input[type = 'email']{
     width:40%;
-    height:25px;
+    height:28px;
+}
+.email-container input[type = 'email']:focus{
+    outline:none;
 }
 .email-container input[type = 'submit']{
 font-size:15px;
 font-weight:bold;
-background:white;
-border:1px solid black;
+background:var(--forth-color);
+color:var(--fifth-color);
+border:2px solid var(--second-color);
 width:80px;
 height:29px;
 transition: all 0.5s;
 }
 .email-container input[type = 'submit']:hover{
-    color:white;
-    background:black;
+    color:var(--forth-color);
+    background:var(--third-color);
     cursor:pointer;
 
 }
@@ -595,45 +618,49 @@ transition: all 0.5s;
     grid-template-columns: repeat(3,1fr);
     padding-left:20px;
     height:40vh;
-    background:#f7f1e3;
-    color:black;
+    background:var(--second-color);
     margin:0;
+    border-top:3px solid var(--forth-color);
 }
 .links-container h3{
     padding-bottom:0;
     margin-bottom:0;
+    color:var(--forth-color);
+
 }
 .links-container div ul li a {
     text-decoration: none;
-    color:black;
+    color:var(--third-color);
 }
 .links-container div ul li {
     list-style-type: none;
     margin-bottom:20px;
 }
+
+
 .links-container div ul{
     padding-left:0;
 }
 .links-container div ul li a:hover {
-    font-weight:bold;
+    color:var(--forth-color);
 }
 
-.links-container .container-c ul li a img{
-    width:22px;
-     margin-right:3px;
-}
 .links-container .container-c ul li a {
 display:flex;
 align-items: center;
 
 }
 .flaticon-link{
-    font-size:12px;
+    font-size:10px;
     position: absolute;
-    background-color: grey;
+    background-color: var(--second-color);
     width:100%;
     margin:0;
     text-align: end;
+    color:white;
+}
+.flaticon-link a{
+    color:var(--forth-color);
 }
 
 @media (max-width:1265px){
@@ -674,6 +701,9 @@ align-items: center;
         display:grid;
         grid-template-columns:repeat(2,1fr);
     }
+    .upper-container{
+        height:50vh;
+    }
 }
 @media(max-width:760px){
 .bottom-container nav ul li{
@@ -696,5 +726,8 @@ width:80%;
     }
     .glasses-container-a{
         width:90%;
+        }
+        .item{
+            height:35vh;
         }
 }
