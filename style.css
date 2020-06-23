@@ -40,8 +40,32 @@ header p:first-child{
     background-repeat: no-repeat;
     background-position:center center;
     position:relative;
-  /*  animation: wallpaper 10s forwards linear infinite;*/ 
+    animation: wallpaper 20s ease-in-out infinite;
 }
+@keyframes wallpaper{
+    0%{
+    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    }
+
+    40%{
+        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-2.jpg');
+        background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+        }
+
+    80%{
+        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-3.jpg');
+        background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    }
+
+}
+
 
 .sign-in-container{
     background-color: white;
@@ -110,7 +134,9 @@ header p:first-child{
     margin:auto;
     text-align: center;
 }
-
+.text-container h1{
+    color:var(--forth-color);
+}
 
 .sign-in-btn{
     background:transparent;
