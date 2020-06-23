@@ -29,7 +29,8 @@ header p:first-child{
 }
 .upper-container{
     width:100%;
-    height:60vh;
+    height:70vh;
+
 }
 
 .upper-container-a{
@@ -40,31 +41,8 @@ header p:first-child{
     background-repeat: no-repeat;
     background-position:center center;
     position:relative;
-    animation: wallpaper 20s ease-in-out infinite;
 }
-@keyframes wallpaper{
-    0%{
-    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-1.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center center;
-    }
 
-    40%{
-        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-2.jpg');
-        background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center center;
-        }
-
-    80%{
-        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-3.jpg');
-        background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center center;
-    }
-
-}
 
 
 .sign-in-container{
@@ -352,6 +330,29 @@ color:var(--first-color);
     align-items:center;
     width:60%;
     margin:auto;
+    animation: wallpaper 20s ease-in-out infinite;
+}
+@keyframes wallpaper{
+    0%{
+    background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    }
+
+    40%{
+        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-2.jpg');
+        background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+        }
+
+    80%{
+        background:linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('./img/background-img-3.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    }
 
 }
 .glasses-container-a span{
@@ -438,14 +439,11 @@ font-weight:bold;
     box-shadow: 0 0 8px;
 }
 .advertisment-container-1{
-width:80vw;
-height:75vh;
-margin: auto;
+    width:80vw;
+margin: 30px auto;
 display:flex;
 justify-content: space-between;
 align-items: center;
-
-
 }
 .advertisment-container-1 img{
     width:49%;
@@ -739,6 +737,10 @@ align-items: center;
 .glasses-container-a{
 width:80%;
 }
+.advertisment-container-1{
+
+    margin: 10px auto;
+}
 }
 @media(max-width:600px){
     .sign-in-btn{
@@ -755,5 +757,8 @@ width:80%;
         }
         .item{
             height:35vh;
+        }
+        .flaticon-link{
+            text-align:start;
         }
 }
