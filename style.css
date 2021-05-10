@@ -204,7 +204,7 @@ height:50px;
     display: block;
 }
 .bottom-container nav ul li{
-    font-size:1.2vw;
+    font-size:1.1vw;
     height:100%;
     padding:10px 14px;
     color:var(--fifth-color);
@@ -360,8 +360,8 @@ color:var(--first-color);
     display:flex;
     align-items: center;
     padding:20px;
-    width:25%;
-    height:70px;
+    width:20%;
+    height:85px;
     margin:auto;
     transition: all 0.5s;
     }
@@ -486,7 +486,6 @@ transform:scale(1.05);
 }
 .item{
     width:100%;
-    height:45vh;
     border:1px solid lightgrey;
     transition:all 0.5s;
 }
@@ -511,7 +510,7 @@ transform:scale(1.05);
 }
 .advertisment-container-2{
     width:85vw;
-    height:70vh;
+    height:700px;
     margin:30px auto;
     box-shadow:0 0 10px grey;
     }
@@ -522,6 +521,7 @@ transform:scale(1.05);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center center;
+    padding:8px;
     position:relative;
 }
 .ad-container-2a{
@@ -706,6 +706,9 @@ align-items: center;
     .sign-in-btn{
         left:85%;
     }
+    .ad-container-2a p{
+        font-size: 20px;
+    }
 }
 @media (max-width:850px){
     .bottom-container h2{
@@ -721,6 +724,9 @@ align-items: center;
         grid-template-columns:repeat(2,1fr);
     }
     .upper-container{
+        height:50vh;
+    }
+    .advertisment-container-2{
         height:50vh;
     }
 }
@@ -749,9 +755,6 @@ width:80%;
     }
     .glasses-container-a{
         width:90%;
-        }
-        .item{
-            height:35vh;
         }
         .flaticon-link{
             text-align:start;
